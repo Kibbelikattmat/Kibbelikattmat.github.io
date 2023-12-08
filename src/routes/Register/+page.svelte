@@ -35,7 +35,7 @@
     main {
     background-image: url('https://img.freepik.com/free-photo/organized-desk-with-copy-space_23-2148219270.jpg');
     background-repeat: no-repeat;
-    background-size: 2000px 5000px;
+    background-size: cover;
 
     }
 </style>

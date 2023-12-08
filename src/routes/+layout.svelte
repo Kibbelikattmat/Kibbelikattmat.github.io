@@ -15,6 +15,7 @@
   >
   <a href="/photoapp">Photo App</a>
   <a href="/Register">Register</a>
+  <a href="/Todo">Todo</a>
 
 </nav>
 
