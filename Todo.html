@@ -5,7 +5,7 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_page-e89226eb.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page-95f073a9.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/start-33f2f901.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index-d6d1a891.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-faef2308.js">
@@ -16,7 +16,7 @@
 		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-245096cc.js">
 		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-9cbb603b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-afff5f93.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/Todo/_page.svelte-9dd90d65.js">
 	</head>
 	<body>
 		<div style="display: contents">
@@ -33,37 +33,26 @@
 
 <hr>
 
-<h1 class="svelte-pgwpqr">Välkommen till min hemsida!
-</h1>
-
-<h2 class="svelte-pgwpqr">Här har jag samlat min uppgifter jag gjort i samband med webbutveckling i årskurs 2 på Maja Beskowgymnasiet!
-</h2>
-
-<h3 class="name svelte-pgwpqr">Förnamn Efternamn
-</h3>
-
-  <p id="inspo" class="svelte-pgwpqr">&quot;The only way to learn a new programming language is by writing
-    programs in it.&quot; - Dennis Ritchie, creator of the C programming language.
-    </p>
-    <p style="background-color:pink" class="svelte-pgwpqr">&quot;Every great developer you know got there by solving problems they
-    were unqualified to solve until they actually did it.&quot; - Patrick McKenzie,
-    software engineer and entrepreneur.
-    </p>
-    .
-    .
-    .
+<div class="container svelte-vt7sd0"><h1 class="svelte-vt7sd0">Todo List</h1>
+    <div class="layout svelte-vt7sd0"><div><h2 class="svelte-vt7sd0">NEW</h2>
+            <input type="text" id="newTask" placeholder="Add a new task" class="svelte-vt7sd0">
+            <button onclick="addTask()" class="svelte-vt7sd0">Add Task</button>
+            <ul id="newTasks" class="svelte-vt7sd0"></ul></div>
+        <div><h2 class="svelte-vt7sd0">COMPLETED</h2>
+            <ul id="completedTasks" class="svelte-vt7sd0"></ul></div></div>
+</div>
 
 
-		<script type="module" data-sveltekit-hydrate="tx0dta">
+		<script type="module" data-sveltekit-hydrate="1iiwhiz">
 			import { start } from "./_app/immutable/start-33f2f901.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="tx0dta"]').parentNode,
+				target: document.querySelector('[data-sveltekit-hydrate="1iiwhiz"]').parentNode,
 				version: "1702026262912",
 				hydrate: {
-					node_ids: [0, 5],
+					node_ids: [0, 8],
 					data: [null,null],
 					form: null
 				}
