@@ -1,6 +1,6 @@
 <script>
   /*Optional task*/
-  import { story_id_store } from "$lib/stores";
+  import { story_id_store } from "$lib/stores.js";
   import { stories } from "$lib/stories";
 
   /* https://svelte.dev/tutorial/in-and-out */

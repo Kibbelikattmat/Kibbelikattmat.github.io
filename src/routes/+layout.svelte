@@ -16,6 +16,8 @@
   <a href="/photoapp">Photo App</a>
   <a href="/Register">Register</a>
   <a href="/Todo">Todo</a>
+  <a href="/chat">chat</a>
+  <a href="/search">Search</a>
 
 </nav>
 

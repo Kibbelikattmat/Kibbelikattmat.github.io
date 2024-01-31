@@ -32,6 +32,28 @@
   let flipcount = 0;
   let firstFlippedCard = null;
 
+  function resetGame() {
+  // Reset scores
+  playerred = 0;
+  playerblue = 0;
+  
+  // Reset turn
+  turnblue = true;
+
+  // Reset and shuffle cards
+  shufflearray(images);
+  cards = [];
+  for (let index = 0; index < 12; index++) {
+    cards.push({
+      id: Math.floor(index / 2),
+      img: images[index], 
+      flipped: false,  
+      completed: false, 
+    });
+  }
+  document.body.style.backgroundColor = '';
+  }
+
   function checkAllCardsMatched() {
     return cards.every(card => card.completed);
   }
@@ -46,7 +68,7 @@
       backgroundColor = 'blue';
       winner = 'Blue Player Wins!';
     } else {
-      backgroundColor = 'green';
+      backgroundColor = 'purple';
       winner = 'It\'s a Tie!';
     }
 
@@ -88,9 +110,21 @@
           firstFlippedCard = null;
           cards = cards;
           if (checkAllCardsMatched()) {
-            celebrateWinner();
+            celebrateWinner();    
+            setTimeout(() =>{
+            resetGame();
+            }, 2000)    
+            
+          if (card.img === firstFlippedCard.img) {
+          if (turnblue) {
+            playerblue++;
+          } else {
+            playerred++;
+          }
+        }
           }
           turnblue = !turnblue;
+
         }, 1000);
       }
     } else if (!card.completed && flipcount >= 2) {
@@ -137,7 +171,8 @@
 
 <style>
   main {
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-left: 540px;
     display: flex;
     place-content: center;
     place-items: center;
@@ -146,8 +181,8 @@
   .row {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(6, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px);
   }
 
   @media (max-width:800px){

@@ -27,7 +27,12 @@ export async function load({ params, fetch }) {
     if (response.status != 200) {
         throw error(response.status, { message: response.statusText })
     }
-    return { params, response: response.json() }; // parses JSON response into native JavaScript objects
-
+    const data = await response.json();
+    
+    const mappedData = data.map(item => {
+        return Object.entries(item);
+    });
+    
+    return { params, response: mappedData };
 }
 
