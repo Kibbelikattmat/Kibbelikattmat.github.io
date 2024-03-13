@@ -1,0 +1,17 @@
+---
+title: Vecka 324
+date: "2024-03-13"
+keywords: ["localStorage", "points"]
+---
+
+<script>
+import { CodeBlock } from '@skeletonlabs/skeleton';
+</script>
+
+<div style=" margin:auto; width:70vw;">
+<CodeBlock language="html" code={`Jag har gjort sidan scrool nyligen här är lite kod ifrån det:
+  const layers = ["/pixel_ship_blue_small.png", "/pixel_ship_green_small.png", "/pixel_ship_red_small.png"];
+  Det var intressant...
+  `}>
+</CodeBlock>
+</div>

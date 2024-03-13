@@ -1,4 +1,6 @@
-<nav>
+<nav class="bg-gray-800">
+  <a class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md
+  px-3 py-2 text-sm font-medium" href="/">Hem</a>
   <a href="/">Hem</a>
   <a href="/memory">Memory</a>
   <a href="/telltale">Telltale</a>
@@ -17,7 +19,7 @@
   <a href="/sidanpt2">Sidanpt2</a>
   <a href="/Amadeus-Ferger">Amadeus Ferger</a>
   <a href="/scroll">Scrool</a>
-
+  <a href="/blog">Bloog</a>
 
 </nav>
 
