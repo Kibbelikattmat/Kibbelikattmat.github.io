@@ -1,9 +1,4 @@
-<script>
-
-</script>
-
-
-<nav >
+<nav>
   <a href="/">Hem</a>
   <a href="/memory">Memory</a>
   <a href="/telltale">Telltale</a>
@@ -18,9 +13,22 @@
   <a href="/Todo">Todo</a>
   <a href="/chat">chat</a>
   <a href="/search">Search</a>
+  <a href="/Sidan">Sidan</a>
+  <a href="/sidanpt2">Sidanpt2</a>
+  <a href="/Amadeus-Ferger">Amadeus Ferger</a>
+  <a href="/scroll">Scrool</a>
+
 
 </nav>
 
-<hr />
 
+
+<style>
+  nav{
+    background-color: orange;
+  }
+  :global(body){
+    margin: 0px;
+  }
+</style>
 <slot />
